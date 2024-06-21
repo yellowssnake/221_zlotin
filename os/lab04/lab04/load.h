@@ -1,0 +1,3 @@
+void bill();
+
+void sam();
