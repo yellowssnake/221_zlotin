@@ -66,9 +66,6 @@ int main(int argc, char *argv[]) {
         };
         printf("And finally…\n");
 
-        if (WIFSIGNALED(stat)) {
-            psignal(WTERMSIG(stat), "Terminated:");
-        }
         printf("Exit status: %d\n", stat);
     }
     return 0;
