@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
         }
 
         execlp(command1, command1, (char *) NULL);
-        errExit("execlp command1");
+        errExit("execlp ls");
     }
 
     pid2 = fork();
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
         }
 
         execvp(command2, &(argv[2]));
-        errExit("execvp command2");
+        errExit("execlp wc");
     }
 
     if (close(pfd[0]) == -1)
